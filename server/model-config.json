@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysql"
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "Usuario",
+        "foreignKey": "idUsuario"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysql",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "Message": {
+    "dataSource": null
+  },
+  "Pais": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Provincia": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Domicilio": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Departamento": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Factura": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Persona": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "PersonaDomicilio": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Empleado": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Cliente": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Pedido": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Receta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Tipo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Margen": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "OrdenCompra": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Articulo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor_has_Articulo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "unidad-medida": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "articulo-venta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "categoria": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "comanda": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "conversion": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle-orden": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle-receta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle-pedido":{
+    "dataSource":"mysql",
+    "public":true
+  }
+}

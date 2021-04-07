@@ -1,0 +1,33 @@
+{
+  "name": "conversion",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idConversion": {
+      "type": "number"
+    },
+    "unidadUno": {
+      "type": "string",
+      "required": true
+    },
+    "valorUno": {
+      "type": "number",
+      "required": true
+    },
+    "unidadDos": {
+      "type": "string",
+      "required": true
+    },
+    "valorDos": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

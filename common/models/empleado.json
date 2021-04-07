@@ -1,0 +1,40 @@
+{
+  "name": "Empleado",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idEmpleado": {
+      "type": "number",
+      "id": true
+    },
+    "dni": {
+      "type": "number",
+      "required": true
+    },
+    "legajo": {
+      "type": "number",
+      "required": true
+    },
+    "esCocinero": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idTipo": {
+      "type": "hasOne",
+      "model": "Tipo",
+      "foreignKey": "idTipo",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Proveedor",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idProveedor": {
+      "type": "number",
+      "required": true,
+      "id":true
+    },
+    "cuit": {
+      "type": "number",
+      "required": true
+    },
+    "nombreProveedor":{
+      "type":"string",
+      "required":true
+    },
+    "telefonoProveedor":{
+      "type":"string",
+      "required":true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "personas": {
+      "type": "hasOne",
+      "model": "Persona",
+      "foreignKey": "idPersona"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

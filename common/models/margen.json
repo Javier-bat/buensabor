@@ -1,0 +1,23 @@
+{
+  "name": "Margen",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idMargen": {
+      "type": "number",
+      "required": true,
+      "id":true
+    },
+    "porcentajeGanancia": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "unidad-medida",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idUnidadMedida": {
+      "type": "number"
+    },
+    "nombreUnidadMedida": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

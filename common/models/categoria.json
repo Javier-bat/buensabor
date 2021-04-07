@@ -1,0 +1,21 @@
+{
+  "name": "categoria",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idCategoria": {
+      "type": "number"
+    },
+    "nombreCategoria": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

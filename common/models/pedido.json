@@ -1,0 +1,35 @@
+{
+  "name": "Pedido",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idPedido": {
+      "type": "number",
+      "id": true
+    },
+    "fechaHora": {
+      "type": "date",
+      "required": true
+    },
+    "precioTotal": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idCliente": {
+      "type": "hasOne",
+      "model": "Cliente",
+      "foreignKey": "idCliente",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

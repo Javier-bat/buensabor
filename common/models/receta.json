@@ -1,0 +1,35 @@
+{
+  "name": "Receta",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idReceta": {
+      "type": "number",
+      "id": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tiempoEstimado": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idEmpleado": {
+      "type": "hasOne",
+      "model": "Empleado",
+      "foreignKey": "idEmpleado",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
